@@ -1,4 +1,4 @@
-package kr.hhplus.be.server;
+package com.ecommerce;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
