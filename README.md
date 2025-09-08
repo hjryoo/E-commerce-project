@@ -1,8 +1,7 @@
 # 🛒 E-Commerce Service
 
 > **확장 가능한 전자상거래 서비스**
-> 
-> DOCS
+
  - [상품조회](docs/viewProduct.md)
  - [주문결제](docs/order.md)
 
