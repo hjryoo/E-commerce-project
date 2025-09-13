@@ -4,6 +4,7 @@
 
  - [상품조회](docs/viewProduct.md)
  - [주문결제](docs/order.md)
+ - [포인트충전](docs/charge.md)
 
 ## 🏗️ 아키텍처 설계
 
