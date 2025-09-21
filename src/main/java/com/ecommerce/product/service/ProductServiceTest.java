@@ -11,6 +11,7 @@ import org.mockito.MockitoAnnotations;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -37,7 +38,7 @@ class ProductServiceTest {
     @DisplayName("모든 상품을 조회할 수 있다")
     void getAllProducts_ShouldReturnAllProducts() {
         // given
-        List<Product> expectedProducts = Arrays.asList(sampleProduct);
+        List<Product> expectedProducts = Collections.singletonList(sampleProduct);
         given(productRepository.findAll()).willReturn(expectedProducts);
 
         // when
@@ -83,7 +84,7 @@ class ProductServiceTest {
     @DisplayName("재고가 있는 상품만 조회할 수 있다")
     void getAvailableProducts_ShouldReturnProductsWithStock() {
         // given
-        List<Product> expectedProducts = Arrays.asList(sampleProduct);
+        List<Product> expectedProducts = Collections.singletonList(sampleProduct);
         given(productRepository.findAvailableProducts()).willReturn(expectedProducts);
 
         // when
@@ -100,7 +101,7 @@ class ProductServiceTest {
     void searchProductsByName_ShouldReturnMatchingProducts() {
         // given
         String searchName = "테스트";
-        List<Product> expectedProducts = Arrays.asList(sampleProduct);
+        List<Product> expectedProducts = Collections.singletonList(sampleProduct);
         given(productRepository.findByNameContaining(searchName)).willReturn(expectedProducts);
 
         // when
@@ -118,7 +119,7 @@ class ProductServiceTest {
         // given
         BigDecimal minPrice = new BigDecimal("5000");
         BigDecimal maxPrice = new BigDecimal("15000");
-        List<Product> expectedProducts = Arrays.asList(sampleProduct);
+        List<Product> expectedProducts = Collections.singletonList(sampleProduct);
         given(productRepository.findByPriceBetween(minPrice, maxPrice)).willReturn(expectedProducts);
 
         // when
