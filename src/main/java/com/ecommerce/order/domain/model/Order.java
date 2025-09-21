@@ -10,7 +10,7 @@ public class Order {
     private final Long userId;
     private final List<OrderItem> orderItems;
     private OrderStatus status;
-    private BigDecimal totalAmount;
+    private final BigDecimal totalAmount;
     private final LocalDateTime orderedAt;
     private LocalDateTime paidAt;
 
