@@ -6,6 +6,7 @@
  - [주문결제](docs/order.md)
  - [포인트충전](docs/charge.md)
  - [UserBalanceRepository](docs/userBalanceRepository.md)
+ - [ProductRepository](docs/productRepository.md)
 
 ## 🏗️ 아키텍처 설계
 
